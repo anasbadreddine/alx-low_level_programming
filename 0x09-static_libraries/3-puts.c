@@ -1,14 +1,20 @@
-#include "main.h"
-void _puts(char *str)
-#include<stdio.h>
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
-}
+#include "holberton.h"
 
+/**
+ * _puts - prints a string and a new line
+ * @str: pointer to a string to print
+ *
+ * Return: 0
+ */
+
+void _puts(char *str)
+{
+	int i = 0;
+
+	while (str[i])
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
+}
